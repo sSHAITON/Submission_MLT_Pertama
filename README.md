@@ -18,11 +18,11 @@ Pada proyek ini akan dibahas mengenai permasalahan dalam bidang peternakan dan k
 ![lumpy disease](https://github.com/user-attachments/assets/9e7ad02f-a368-42c8-af24-7bddb90e3b5d)  
 **Gambar 1. Lumpy Skin Disease**
 
-Kesehatan hewan ternak merupakan aspek krusial dalam industri peternakan. Penyakit pada hewan ternak dapat menyebabkan kerugian ekonomi yang signifikan, mulai dari penurunan produktivitas hingga kematian ternak yang berdampak langsung pada pendapatan peternak. Selain itu, beberapa penyakit pada hewan ternak berpotensi menjadi zoonosis (penyakit yang dapat ditularkan dari hewan ke manusia), yang dapat mengancam kesehatan masyarakat secara luas [1] [2].
+Kesehatan hewan ternak merupakan aspek krusial dalam industri peternakan. Penyakit pada hewan ternak dapat menyebabkan kerugian ekonomi yang signifikan, mulai dari penurunan produktivitas hingga kematian ternak yang berdampak langsung pada pendapatan peternak. Selain itu, beberapa penyakit pada hewan ternak berpotensi menjadi zoonosis (penyakit yang dapat ditularkan dari hewan ke manusia), yang dapat mengancam kesehatan masyarakat secara luas [5] [3].
 
-Deteksi dini dan diagnosis yang akurat sangat penting untuk mengatasi penyakit pada hewan ternak. Veteriner dan peternak harus mampu mengidentifikasi gejala-gejala spesifik dan mengaitkannya dengan penyakit tertentu untuk memberikan penanganan yang tepat [3] [4]. Namun, proses diagnosis manual membutuhkan keahlian khusus dan pengalaman yang mungkin tidak dimiliki oleh semua peternak, terutama di daerah dengan keterbatasan akses ke layanan kesehatan hewan.
+Deteksi dini dan diagnosis yang akurat sangat penting untuk mengatasi penyakit pada hewan ternak. Veteriner dan peternak harus mampu mengidentifikasi gejala-gejala spesifik dan mengaitkannya dengan penyakit tertentu untuk memberikan penanganan yang tepat [2] [4]. Namun, proses diagnosis manual membutuhkan keahlian khusus dan pengalaman yang mungkin tidak dimiliki oleh semua peternak, terutama di daerah dengan keterbatasan akses ke layanan kesehatan hewan.
 
-Penerapan machine learning dalam prediksi penyakit hewan ternak menawarkan solusi yang efisien dan dapat diakses secara luas. Dengan menganalisis data historis tentang gejala dan diagnosa, model machine learning dapat membantu mengidentifikasi pola yang mungkin tidak terlihat oleh manusia, serta memberikan prediksi yang akurat tentang kemungkinan penyakit berdasarkan gejala yang diamati.
+Penerapan machine learning dalam prediksi penyakit hewan ternak menawarkan solusi yang efisien dan dapat diakses secara luas [1]. Dengan menganalisis data historis tentang gejala dan diagnosa, model machine learning dapat membantu mengidentifikasi pola yang mungkin tidak terlihat oleh manusia, serta memberikan prediksi yang akurat tentang kemungkinan penyakit berdasarkan gejala yang diamati.
 
 ## Business Understanding
 
