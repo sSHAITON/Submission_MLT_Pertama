@@ -10,16 +10,17 @@
 - [Evaluation](#evaluation)
 - [Referensi](#referensi)
 
+
 ## Domain Proyek
 
 Pada proyek ini akan dibahas mengenai permasalahan dalam bidang peternakan dan kesehatan hewan, khususnya untuk memprediksi penyakit pada hewan ternak berdasarkan gejala-gejala yang ditunjukkan. Dengan kemajuan teknologi dan penerapan machine learning, diagnosis dini terhadap penyakit hewan ternak dapat dilakukan dengan lebih cepat dan akurat, sehingga penanganan dapat dilakukan lebih efektif.
 
-![livestock-health](https://placeholder.com/livestock-health-illustration)  
-**Gambar 1. Ilustrasi Kesehatan Hewan Ternak**
+![lumpy disease](https://github.com/user-attachments/assets/9e7ad02f-a368-42c8-af24-7bddb90e3b5d)  
+**Gambar 1. Lumpy Skin Disease**
 
-Kesehatan hewan ternak merupakan aspek krusial dalam industri peternakan. Penyakit pada hewan ternak dapat menyebabkan kerugian ekonomi yang signifikan, mulai dari penurunan produktivitas hingga kematian ternak yang berdampak langsung pada pendapatan peternak. Selain itu, beberapa penyakit pada hewan ternak berpotensi menjadi zoonosis (penyakit yang dapat ditularkan dari hewan ke manusia), yang dapat mengancam kesehatan masyarakat secara luas.
+Kesehatan hewan ternak merupakan aspek krusial dalam industri peternakan. Penyakit pada hewan ternak dapat menyebabkan kerugian ekonomi yang signifikan, mulai dari penurunan produktivitas hingga kematian ternak yang berdampak langsung pada pendapatan peternak. Selain itu, beberapa penyakit pada hewan ternak berpotensi menjadi zoonosis (penyakit yang dapat ditularkan dari hewan ke manusia), yang dapat mengancam kesehatan masyarakat secara luas [1] [2].
 
-Deteksi dini dan diagnosis yang akurat sangat penting untuk mengatasi penyakit pada hewan ternak. Veteriner dan peternak harus mampu mengidentifikasi gejala-gejala spesifik dan mengaitkannya dengan penyakit tertentu untuk memberikan penanganan yang tepat. Namun, proses diagnosis manual membutuhkan keahlian khusus dan pengalaman yang mungkin tidak dimiliki oleh semua peternak, terutama di daerah dengan keterbatasan akses ke layanan kesehatan hewan.
+Deteksi dini dan diagnosis yang akurat sangat penting untuk mengatasi penyakit pada hewan ternak. Veteriner dan peternak harus mampu mengidentifikasi gejala-gejala spesifik dan mengaitkannya dengan penyakit tertentu untuk memberikan penanganan yang tepat [3] [4]. Namun, proses diagnosis manual membutuhkan keahlian khusus dan pengalaman yang mungkin tidak dimiliki oleh semua peternak, terutama di daerah dengan keterbatasan akses ke layanan kesehatan hewan.
 
 Penerapan machine learning dalam prediksi penyakit hewan ternak menawarkan solusi yang efisien dan dapat diakses secara luas. Dengan menganalisis data historis tentang gejala dan diagnosa, model machine learning dapat membantu mengidentifikasi pola yang mungkin tidak terlihat oleh manusia, serta memberikan prediksi yang akurat tentang kemungkinan penyakit berdasarkan gejala yang diamati.
 
@@ -53,8 +54,7 @@ Berdasarkan rumusan masalah dan tujuan di atas, maka disimpulkan beberapa solusi
    - Standarisasi fitur numerik untuk memastikan semua fitur berkontribusi secara setara
 
 ## Data Understanding
-
-![dataset-preview](https://placeholder.com/dataset-preview)  
+![dataset](https://github.com/user-attachments/assets/5e655ea9-a0ab-4ea6-b190-35f0ae68dfa8)
 **Gambar 2. Preview Dataset Penyakit Hewan Ternak**
 
 Dataset yang digunakan dalam proyek ini adalah ["Livestock Symptoms and Diseases"](https://www.kaggle.com/datasets/researcher1548/livestock-symptoms-and-diseases) yang diambil dari platform Kaggle. Dataset ini berisi informasi tentang hewan ternak, gejala-gejala yang ditunjukkan, dan diagnosis penyakit.
@@ -90,8 +90,7 @@ Dataset yang digunakan dalam proyek ini adalah ["Livestock Symptoms and Diseases
 Berdasarkan statistik deskriptif, usia hewan berkisar antara 1-15 tahun dengan rata-rata 7 tahun, dan suhu tubuh berkisar antara 100-105°F dengan rata-rata 102.3°F.
 
 #### 2. Distribusi Variabel Kategorikal
-
-![categorical-distribution](https://placeholder.com/categorical-distribution)  
+![distribusi_kategorikal](https://github.com/user-attachments/assets/3fdac933-bbe3-40e4-a70f-f37fc817df0a)
 **Gambar 3. Distribusi Variabel Kategorikal**
 
 - **Animal**: Distribusi cukup seimbang antara empat jenis hewan (buffalo, cow, goat, sheep) dengan proporsi masing-masing sekitar 25%.
@@ -99,26 +98,25 @@ Berdasarkan statistik deskriptif, usia hewan berkisar antara 1-15 tahun dengan r
 - **Symptoms**: Gejala paling umum adalah "loss of appetite" (23%), "depression" (15%), dan "painless lumps" (11%).
 
 #### 3. Analisis Hubungan antar Variabel
-
-![symptoms-by-disease](https://placeholder.com/symptoms-by-disease)  
+![distribusi_gejala_penyakit](https://github.com/user-attachments/assets/8fbfafb8-ac56-4c12-ba10-80f4542af818)  
 **Gambar 4. Distribusi Gejala berdasarkan Penyakit**
 
 - **Anthrax**: Ditandai dengan gejala pernapasan (shortness of breath, chest discomfort) dan sistemik (fatigue, sweats, chills).
 - **Blackleg**: Memiliki ciri khas "crackling sound" yang tidak muncul di penyakit lainnya.
 - **Foot and mouth disease**: Ditandai dengan gangguan mobilitas (difficulty walking, lameness) dan lesi pada mulut dan kaki.
 - **Lumpy virus dan Pneumonia**: Memiliki profil gejala yang hampir identik (painless lumps, depression, loss of appetite), sehingga sulit dibedakan hanya dari gejala klinis.
-
-![age-temp-by-disease](https://placeholder.com/age-temp-by-disease)  
+  
+![distribusi_umur_temp_penyakit](https://github.com/user-attachments/assets/80de816d-6494-4258-af44-cda07b16a903)
 **Gambar 5. Distribusi Umur dan Temperatur berdasarkan Penyakit**
 
 - Foot and mouth disease dan anthrax cenderung menyerang hewan dengan usia lebih muda (sekitar 6 tahun).
 - Pneumonia dan lumpy virus menunjukkan suhu tubuh median yang sedikit lebih tinggi dibandingkan penyakit lain.
 - Buffalo dan sapi secara konsisten lebih tua (7.8-8.1 tahun) dibandingkan kambing dan domba (5.4-5.6 tahun) terlepas dari jenis penyakitnya.
 
-#### 4. Analisis Korelasi
+#### 4. Analisis 
 
-![correlation-matrix](https://placeholder.com/correlation-matrix)  
-**Gambar 6. Matriks Korelasi Fitur**
+![analisis_korelasi](https://github.com/user-attachments/assets/d54795e1-29aa-46ab-8813-c4352db21f57)
+**Gambar 6. Korelasi Fitur dengan Penyakit**
 
 - Gejala "painless lumps" memiliki korelasi tertinggi (+0.8) dengan diagnosis penyakit tertentu (kemungkinan lumpy virus).
 - "Loss of appetite" (+0.7) merupakan indikator kuat kedua untuk diagnosis penyakit.
@@ -168,7 +166,7 @@ Pengelompokan gejala menjadi sindrom untuk menangkap pola gejala yang lebih komp
 3. **Foot Mouth Syndrome**: Difficulty walking, lameness, blisters, sores, drooling
 4. **Lumps Syndrome**: Painless lumps, painful lumps, swelling in neck/extremities/abdomen
 
-![syndrome-distribution](https://placeholder.com/syndrome-distribution)  
+![distribusi_sindrom](https://github.com/user-attachments/assets/2f71aa1d-45e3-4936-8d90-c2c67c5b024e)
 **Gambar 7. Distribusi Sindrom berdasarkan Penyakit**
 
 ### 3. Feature Selection
@@ -178,7 +176,7 @@ Seleksi fitur dilakukan untuk mengidentifikasi variabel yang paling relevan dala
 1. **Mutual Information Score**: Mengukur dependensi antara fitur dan target
 2. **Chi-Square Test**: Mengukur independensi antara fitur kategorikal dan target
 
-![feature-importance](https://placeholder.com/feature-importance)  
+![MI](https://github.com/user-attachments/assets/f2fd48e6-e6eb-4fa9-87b4-e1edd2aacef2)
 **Gambar 8. Top 20 Fitur berdasarkan Mutual Information Score**
 
 Berdasarkan hasil analisis, 31 fitur terpilih sebagai input untuk model, termasuk:
@@ -191,8 +189,8 @@ Berdasarkan hasil analisis, 31 fitur terpilih sebagai input untuk model, termasu
 Dataset dibagi menjadi data latih (75%) dan data uji (25%) dengan stratifikasi berdasarkan target untuk memastikan distribusi kelas yang seimbang.
 
 ```
-X_train shape: (32833, 34)
-X_test shape: (10945, 34)
+X_train shape: (32833, 31)
+X_test shape: (10945, 31)
 ```
 
 ### 5. Feature Scaling
@@ -283,7 +281,8 @@ Evaluasi model dilakukan menggunakan beberapa metrik untuk mendapatkan gambaran 
 | F1 Score    | 0.827   | 0.815         |
 | ROC AUC     | 0.957   | 0.953         |
 
-![model-comparison](https://placeholder.com/model-comparison)  
+![comp_model](https://github.com/user-attachments/assets/2d36f94d-2bc4-4435-b751-e5264c21d1fd)
+
 **Gambar 9. Perbandingan Performa Model**
 
 **Tabel 3. Performa Per-Kelas**
@@ -295,13 +294,19 @@ Evaluasi model dilakukan menggunakan beberapa metrik untuk mendapatkan gambaran 
 | lumpy virus      | 0.474             | 0.433        | 0.404          | 0.413     | 0.436      | 0.423   |
 | pneumonia        | 0.490             | 0.449        | 0.561          | 0.469     | 0.523      | 0.459   |
 
-![f1-by-disease](https://placeholder.com/f1-by-disease)  
+![f1_disease](https://github.com/user-attachments/assets/8fa486cd-840f-4c43-820d-b7eeaabea110)
+
 **Gambar 10. Perbandingan F1 Score berdasarkan Penyakit**
 
 ### Confusion Matrix
 
-![confusion-matrix](https://placeholder.com/confusion-matrix)  
+![conf_mx_xg](https://github.com/user-attachments/assets/f2916f3f-69c9-40cd-9c52-c4a52de7f22b)
+
 **Gambar 11. Confusion Matrix Model XGBoost**
+
+![conf_mx_rf](https://github.com/user-attachments/assets/275fd230-30ad-483c-8f80-897eaaa61821)
+
+**Gambar 12. Confusion Matrix Model Random Forest**
 
 ### Analisis Hasil
 
