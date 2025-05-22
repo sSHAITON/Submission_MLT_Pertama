@@ -57,7 +57,7 @@ Berdasarkan rumusan masalah dan tujuan di atas, maka disimpulkan beberapa solusi
 ![dataset-preview](https://placeholder.com/dataset-preview)  
 **Gambar 2. Preview Dataset Penyakit Hewan Ternak**
 
-Dataset yang digunakan dalam proyek ini adalah "Livestock Symptoms and Diseases" yang diambil dari platform Kaggle. Dataset ini berisi informasi tentang hewan ternak, gejala-gejala yang ditunjukkan, dan diagnosis penyakit.
+Dataset yang digunakan dalam proyek ini adalah ["Livestock Symptoms and Diseases"](https://www.kaggle.com/datasets/researcher1548/livestock-symptoms-and-diseases) yang diambil dari platform Kaggle. Dataset ini berisi informasi tentang hewan ternak, gejala-gejala yang ditunjukkan, dan diagnosis penyakit.
 
 ### Informasi Dataset
 - Jumlah sampel: 43,778 entri
@@ -181,7 +181,7 @@ Seleksi fitur dilakukan untuk mengidentifikasi variabel yang paling relevan dala
 ![feature-importance](https://placeholder.com/feature-importance)  
 **Gambar 8. Top 20 Fitur berdasarkan Mutual Information Score**
 
-Berdasarkan hasil analisis, 34 fitur terpilih sebagai input untuk model, termasuk:
+Berdasarkan hasil analisis, 31 fitur terpilih sebagai input untuk model, termasuk:
 - Fitur syndrome yang dibuat (respiratory, systemic, foot_mouth, lumps)
 - Fitur demografis (Age, Temperature, jenis hewan)
 - Gejala spesifik dengan skor MI tertinggi (has_painless_lumps, has_depression, dll)
@@ -335,12 +335,12 @@ Faktor pembeda utama adalah kemampuan superior XGBoost dalam membedakan kasus-ka
 
 ## Referensi
 
-[1] Smith, J. & Johnson, A. (2020). "Early Detection of Livestock Diseases Using Machine Learning Techniques." Journal of Veterinary Research, 45(2), 112-128.
+[1] H. M. Prosser *et al.*, "[Application of artificial intelligence and machine learning in bovine respiratory disease prevention, diagnosis, and classification](https://avmajournals.avma.org/view/journals/ajvr/86/S1/ajvr.24.10.0327.xml)," *American Journal of Veterinary Research*, vol. 86, no. S1, pp. S22–S26, Feb. 2025. doi: 10.2460/ajvr.24.10.0327.
 
-[2] Anderson, R.M. & May, R.M. (2021). "Infectious Diseases of Animals: Dynamics and Control." Oxford University Press.
+[2]  Food and Agriculture Organization of the United Nations, World Health Organization, and World Organisation for Animal Health, "([https://iris.who.int/bitstream/handle/10665/325620/9789241514934-eng.pdf](https://iris.who.int/bitstream/handle/10665/325620/9789241514934-eng.pdf))". Geneva: WHO, 2019.
 
-[3] World Organisation for Animal Health (OIE). (2022). "Terrestrial Animal Health Code."
+[3]  Food and Agriculture Organization of the United Nations, "[Zoonoses](https://www.fao.org/one-health/areas-of-work/zoonoses/en)," *FAO*. [Online]. Available: [https://www.fao.org/one-health/areas-of-work/zoonoses/en](https://www.fao.org/one-health/areas-of-work/zoonoses/en), Accessed: May 22, 2025.
 
-[4] Chen, T. & Guestrin, C. (2016). "XGBoost: A Scalable Tree Boosting System." Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 785-794.
+[4]  M. Imani, A. Beikmohammadi, and H. R. Arabnia, "([https://www.mdpi.com/2227-7080/13/3/88](https://www.mdpi.com/2227-7080/13/3/88))," *Technologies*, vol. 13, no. 3, p. 88, Feb. 2025. doi: 10.3390/technologies13030088.
 
-[5] Breiman, L. (2001). "Random Forests." Machine Learning, 45(1), 5-32.
+[5]  World Organisation for Animal Health, "[Controlling the cross-border spread of livestock diseases](https://www.woah.org/en/article/controlling-the-cross-border-spread-of-livestock-diseases/)," *WOAH*, Mar. 2025. [Online]. Available: [https://www.woah.org/en/article/controlling-the-cross-border-spread-of-livestock-diseases/](https://www.woah.org/en/article/controlling-the-cross-border-spread-of-livestock-diseases/), Accessed: May 22, 2025.
