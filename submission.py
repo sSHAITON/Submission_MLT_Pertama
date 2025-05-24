@@ -295,7 +295,6 @@ plt.title('Correlation Matrix - Fitur Numerik', fontsize=16)
 plt.tight_layout()
 plt.show()
 df_encoded = df.copy()
-# Label encoding untuk target variable (Disease)
 le = LabelEncoder()
 df_encoded['Disease_encoded'] = le.fit_transform(df_encoded['Disease'])
 # One-hot encoding untuk Animal
